@@ -1,0 +1,4 @@
+SUPABASE_URL = "https://piwecncgwldotmexqhdc.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpd2VjbmNnd2xkb3RtZXhxaGRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNTAyMTUsImV4cCI6MjA4ODYyNjIxNX0.FtiGbDevd6QGYvjFobCXNw-pfOl5crMLK_wWLXiCaks"
+DATABASE_URL = "postgresql://postgres.piwecncgwldotmexqhdc:salessupabase@aws-1-ap-southeast-1.pooler.supabase.com:5432/postgres"
+ADMIN_EMAIL = "bhtnarayan17@gmail.com"
