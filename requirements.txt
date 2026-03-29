@@ -1,0 +1,7 @@
+streamlit
+plotly
+supabase
+pandas
+sqlalchemy
+psycopg2-binary
+prophet
