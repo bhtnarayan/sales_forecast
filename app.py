@@ -15,13 +15,17 @@ st_autorefresh(interval=10000, key="refresh")
 # -------------------------------
 st.set_page_config(page_title="AI Sales Dashboard", layout="wide")
 
-DATABASE_URL = st.secrets.get("DATABASE_URL")
-# engine = create_engine(DATABASE_URL)
+DATABASE_URL = st.secrets["DATABASE_URL"]
+
+if not DATABASE_URL:
+    st.error("DATABASE_URL is missing!")
+    st.stop()
+
 engine = create_engine(
-        DATABASE_URL,
-        pool_pre_ping=True,   # prevents broken connection
-        pool_recycle=300      # avoids timeout
-    )
+    DATABASE_URL,
+    pool_pre_ping=True,
+    pool_recycle=300
+)
 
 df = pd.read_sql("SELECT * FROM sales", engine)
 
